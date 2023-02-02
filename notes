@@ -1,0 +1,14 @@
+Notes for rock, paper, scissors project.
+
+Create function getComputerChoice that returns rock, paper, or scissors.
+//
+getComputerChoice ()
+Create function that takes playerSelection input
+Create function that takes getComputerChoice
+Case insensitive
+Play single round
+Return winner
+
+Create function called game()
+Call playRound 5 times and keeps score
+Reports winner or loser at the end.
