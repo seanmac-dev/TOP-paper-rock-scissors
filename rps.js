@@ -12,17 +12,18 @@ function getComputerChoice(string) {
   
 }function playRound(playerSelection, computerSelection) {
   computerSelection = getComputerChoice().toLowerCase();
-  playerSelection = playerSelection().toLowerCase();
+  playerSelection = prompt().toLowerCase();
+
+  //const result = document.querySelector('.result'); This will be used later when you have a result div
   if (computerSelection == playerSelection) {
-    displayResults("Tie game!");
+    return("Tie game!");
   } else if (
     (computerSelection == "rock" && playerSelection == "scissors") ||
     (computerSelection == "scissors" && playerSelection == "paper") ||
     (computerSelection == "paper" && playerSelection == "rock")
   )
-      { para.textContent = `You lost.`;
-        computerScore++;  
-      } else { para.textContent = 'You won!!';}
+      { return("You lost.");  
+      } else { return("You won!!");}
   }
   
 const playerSelection = prompt();
